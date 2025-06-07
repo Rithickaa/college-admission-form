@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>College Admission Application</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Full Name:</label><br>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <br>
+            <input type="radio" name="gender">
+            <label for="m">Male</label>
+            <br>
+            <input type="radio" name="gender">
+            <label for="f">Female</label>
+            <br>
+            <input type="radio" name="gender">
+            <label for="o">Other</label>
+            <br><br>
+            <label for="mail">Email:</label><br>
+            <input type="text" name="email" id="mail">
+            <br><br>
+            <label for="no">Phone Number:</label><br>
+            <input type="number" name="number" id="no">
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Academic Details</legend>
+            <label for="pass">Examination Passed:</label><br>
+            <input type="checkbox" name="" id="pass">
+            <label for="10">10th</label><br>
+            <input type="checkbox" name="" id="pass">
+            <label for="12">12th</label><br>
+            <input type="checkbox" name="" id="pass">
+            <label for="diploma">Diploma</label><br>
+            <br>
+            <label for="12th marks">12th Grade Marks(%):</label><br>
+            <input type="text" name="" id="12th marks">
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Course Selection</legend>
+            <label for="stream">Preferred Stream</label><br>
+            <select name="stream" id="st">
+                <option value="" disabled selected>Select</option>
+                <option value="AI&DS">Aritificial Intelligence and Data Science</option>
+                <option value="CSBS">Computer Science and Business System</option>
+                <option value="CSE">Computer Science Engineering</option>
+                <option value="AI&ML">Artificial Intelligence and Machine Learning</option>
+                <option value="ECE">Electronics and Communication Engineering</option>
+                <option value="EEE">Electonics and Electrical Engineering</option>
+                <option value="BME">Biomedical Engineering</option>
+            </select>
+            <br><br>
+            <label for="college">Preferred College:</label><br>
+            <select name="college" id="clg">
+                <option value="" disabled selected>Select</option>
+                <option value="KIT">KIT- Kalaignar Karunanidhi Institute of Technology</option>
+                <option value="PSG">PSG Tech</option>
+                <option value="KCT">KCT -Kumaraguru College of Technology</option>
+                <option value="KCE">KCE- Karpagam College of Technology</option>
+                <option value="RVS">RVS College of Technology</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Other Details</legend>
+            <label for="reason">Why do you want to join?</label>
+            <br>
+            <textarea name="reason" id="y" rows="10" cols="40"></textarea>
+            <br><br>
+            <label for="speed">Your Internet Speed(for online learning):</label>
+            <input type="range" style="accent-color:rgb(255, 0, 204)" name="speed" id="speed" min="1" max="100" step="10">
+            <br><br>
+            <input type="checkbox" name="doc" id="doc">
+            <label for="doc">I have uploaded all required documents</label>
+            <br>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">I agree to the terms and conditions</label>
+            <br><br>
+        </fieldset>
+        <button>Submit Application</button>
+    </form>
+</body>
+</html>
