@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -93,4 +93,102 @@
         <button>Submit Application</button>
     </form>
 </body>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+</head>
+<body>
+    <h1>College Admission Application</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Full Name:</label><br>
+            <input type="text" name="name" id="name"><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" name="dob" id="dob"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" id="m" value="Male">
+            <label for="m">Male</label><br>
+            <input type="radio" name="gender" id="f" value="Female">
+            <label for="f">Female</label><br>
+            <input type="radio" name="gender" id="o" value="Other">
+            <label for="o">Other</label><br><br>
+
+            <label for="mail">Email:</label><br>
+            <input type="email" name="email" id="mail"><br><br>
+
+            <label for="no">Phone Number:</label><br>
+            <input type="tel" name="number" id="no"><br><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Academic Details</legend>
+            <label>Examination Passed:</label><br>
+            <input type="checkbox" name="passed10" id="pass10">
+            <label for="pass10">10th</label><br>
+            <input type="checkbox" name="passed12" id="pass12">
+            <label for="pass12">12th</label><br>
+            <input type="checkbox" name="diploma" id="passDip">
+            <label for="passDip">Diploma</label><br><br>
+
+            <label for="marks12">12th Grade Marks(%):</label><br>
+            <input type="text" name="marks12" id="marks12"><br><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Course Selection</legend>
+            <label for="st">Preferred Stream:</label><br>
+            <select name="stream" id="st">
+                <option value="" disabled selected>Select</option>
+                <option value="AI&DS">Artificial Intelligence and Data Science</option>
+                <option value="CSBS">Computer Science and Business System</option>
+                <option value="CSE">Computer Science Engineering</option>
+                <option value="AI&ML">Artificial Intelligence and Machine Learning</option>
+                <option value="ECE">Electronics and Communication Engineering</option>
+                <option value="EEE">Electronics and Electrical Engineering</option>
+                <option value="BME">Biomedical Engineering</option>
+            </select><br><br>
+
+            <label for="clg">Preferred College:</label><br>
+            <select name="college" id="clg">
+                <option value="" disabled selected>Select</option>
+                <option value="KIT">KIT - Kalaignar Karunanidhi Institute of Technology</option>
+                <option value="PSG">PSG Tech</option>
+                <option value="KCT">KCT - Kumaraguru College of Technology</option>
+                <option value="KCE">KCE - Karpagam College of Engineering</option>
+                <option value="RVS">RVS College of Technology</option>
+            </select>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Other Details</legend>
+            <label for="y">Why do you want to join?</label><br>
+            <textarea name="reason" id="y" rows="10" cols="40"></textarea><br><br>
+
+            <label for="speed">Your Internet Speed (1–100 Mbps):</label><br>
+            <input type="range" name="speed" id="speed" min="1" max="100" step="10" style="accent-color:rgb(255, 0, 204)"><br><br>
+
+            <input type="checkbox" name="doc" id="doc">
+            <label for="doc">I have uploaded all required documents</label><br>
+
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">I agree to the terms and conditions</label><br><br>
+        </fieldset>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
 </html>
+
